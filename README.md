@@ -25,3 +25,4 @@ pipeline:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ****:/data
+
