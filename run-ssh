@@ -1,0 +1,3 @@
+#!/bin/sh
+
+ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST -i $SSH_KEY $SSH_COMMAND
