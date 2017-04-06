@@ -2,7 +2,7 @@
 Custom Plugin for SSH-ing with drone
 
 Example: run from cli
-
+```
 docker run --rm -it \
   -v ${PWD}:/data \
   -e SSH_USER=**** \
@@ -10,10 +10,10 @@ docker run --rm -it \
   -e SSH_KEY='/data/***.pem' \
   -e SSH_COMMAND='echo hello' \
   devopsbootcamp2/ssh-drone-plugin
-  
+  ```
   
 Example in .drone.yml
-
+```
 pipeline:
   ssh:
     image: devopsbootcamp2/ssh-drone-plugin
@@ -25,4 +25,4 @@ pipeline:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ****:/data
-
+```
